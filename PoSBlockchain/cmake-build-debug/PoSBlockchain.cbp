@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="PoSBlockchain"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\aws-sdk\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-core\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-AWSMigrationHub\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-acm\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-acm-pca\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-alexaforbusiness\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-apigateway\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-application-autoscaling\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-appstream\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-appsync\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-athena\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-autoscaling\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-autoscaling-plans\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-batch\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-budgets\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ce\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloud9\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-clouddirectory\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudformation\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudfront\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudhsm\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudhsmv2\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudsearch\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudsearchdomain\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudtrail\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codebuild\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codecommit\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codedeploy\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codepipeline\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codestar\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-identity\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-idp\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-sync\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-comprehend\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-config\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-connect\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cur\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-datapipeline\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dax\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-devicefarm\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-directconnect\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-discovery\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dms\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ds\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dynamodb\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dynamodbstreams\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ec2\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ecr\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ecs\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-eks\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticache\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticbeanstalk\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticfilesystem\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticloadbalancing\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticloadbalancingv2\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticmapreduce\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elastictranscoder\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-email\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-marketplace-entitlement\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-es\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-events\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-firehose\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-fms\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-gamelift\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-glacier\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-glue\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-greengrass\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-guardduty\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-health\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iam\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-importexport\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-inspector\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot-data\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot-jobs-data\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot1click-devices\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot1click-projects\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iotanalytics\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis-video-archived-media\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis-video-media\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesisanalytics\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesisvideo\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kms\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lambda\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lex-models\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lightsail\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-logs\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-machinelearning\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-macie\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-marketplacecommerceanalytics\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediaconvert\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-medialive\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediapackage\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediastore\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediastore-data\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediatailor\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-meteringmarketplace\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mobile\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mobileanalytics\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-monitoring\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mq\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mturk-requester\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-neptune\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-opsworks\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-opsworkscm\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-organizations\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pi\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pinpoint\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-polly\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pricing\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-rds\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-redshift\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-rekognition\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-resource-groups\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-resourcegroupstaggingapi\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-route53\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-route53domains\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lex\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sagemaker-runtime\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-s3\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sagemaker\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sdb\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-secretsmanager\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-serverlessrepo\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-servicecatalog\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-servicediscovery\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-shield\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sms\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-snowball\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sns\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sqs\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ssm\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-states\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-storagegateway\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sts\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-support\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-swf\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-transcribe\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-translate\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-waf\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-waf-regional\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workdocs\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workmail\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workspaces\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-xray\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-access-management\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-identity-management\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-queues\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-transfer\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-s3-encryption\;CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-text-to-speech\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PoSBlockchain">
+				<Option output="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug/PoSBlockchain.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DAWS_SDK_VERSION_MAJOR=1"/>
+					<Add option="-DAWS_SDK_VERSION_MINOR=4"/>
+					<Add option="-DAWS_SDK_VERSION_PATCH=79"/>
+					<Add option="-DUSE_WINDOWS_DLL_SEMANTICS"/>
+					<Add option="-DUSE_IMPORT_EXPORT=1"/>
+					<Add directory="C:/rapidjson-master/include"/>
+					<Add directory="C:/PicoSHA2-master"/>
+					<Add directory="C:/aws-sdk-cpp-master/aws-cpp-sdk-core/include"/>
+					<Add directory="C:/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 PoSBlockchain"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PoSBlockchain/fast">
+				<Option output="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug/PoSBlockchain.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DAWS_SDK_VERSION_MAJOR=1"/>
+					<Add option="-DAWS_SDK_VERSION_MINOR=4"/>
+					<Add option="-DAWS_SDK_VERSION_PATCH=79"/>
+					<Add option="-DUSE_WINDOWS_DLL_SEMANTICS"/>
+					<Add option="-DUSE_IMPORT_EXPORT=1"/>
+					<Add directory="C:/rapidjson-master/include"/>
+					<Add directory="C:/PicoSHA2-master"/>
+					<Add directory="C:/aws-sdk-cpp-master/aws-cpp-sdk-core/include"/>
+					<Add directory="C:/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 PoSBlockchain/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Son Do\CLionProjects\PoSBlockchain\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/cmake-build-debug/awsfunctions.h">
+			<Option target="PoSBlockchain"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/main.cpp">
+			<Option target="PoSBlockchain"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-sdk-cpp-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-core/aws-cpp-sdk-core-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-core/aws-cpp-sdk-core-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-AWSMigrationHub/aws-cpp-sdk-AWSMigrationHub-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-AWSMigrationHub\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-AWSMigrationHub/aws-cpp-sdk-AWSMigrationHub-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-AWSMigrationHub\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-acm/aws-cpp-sdk-acm-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-acm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-acm/aws-cpp-sdk-acm-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-acm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-acm-pca/aws-cpp-sdk-acm-pca-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-acm-pca\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-acm-pca/aws-cpp-sdk-acm-pca-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-acm-pca\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-alexaforbusiness/aws-cpp-sdk-alexaforbusiness-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-alexaforbusiness\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-alexaforbusiness/aws-cpp-sdk-alexaforbusiness-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-alexaforbusiness\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-apigateway/aws-cpp-sdk-apigateway-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-apigateway\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-apigateway/aws-cpp-sdk-apigateway-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-apigateway\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-application-autoscaling/aws-cpp-sdk-application-autoscaling-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-application-autoscaling\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-application-autoscaling/aws-cpp-sdk-application-autoscaling-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-application-autoscaling\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-appstream/aws-cpp-sdk-appstream-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-appstream\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-appstream/aws-cpp-sdk-appstream-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-appstream\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-appsync/aws-cpp-sdk-appsync-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-appsync\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-appsync/aws-cpp-sdk-appsync-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-appsync\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-athena/aws-cpp-sdk-athena-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-athena\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-athena/aws-cpp-sdk-athena-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-athena\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-autoscaling/aws-cpp-sdk-autoscaling-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-autoscaling\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-autoscaling/aws-cpp-sdk-autoscaling-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-autoscaling\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-autoscaling-plans/aws-cpp-sdk-autoscaling-plans-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-autoscaling-plans\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-autoscaling-plans/aws-cpp-sdk-autoscaling-plans-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-autoscaling-plans\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-batch/aws-cpp-sdk-batch-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-batch\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-batch/aws-cpp-sdk-batch-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-batch\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-budgets/aws-cpp-sdk-budgets-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-budgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-budgets/aws-cpp-sdk-budgets-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-budgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ce/aws-cpp-sdk-ce-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ce\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ce/aws-cpp-sdk-ce-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ce\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloud9/aws-cpp-sdk-cloud9-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloud9\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloud9/aws-cpp-sdk-cloud9-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloud9\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-clouddirectory/aws-cpp-sdk-clouddirectory-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-clouddirectory\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-clouddirectory/aws-cpp-sdk-clouddirectory-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-clouddirectory\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudformation/aws-cpp-sdk-cloudformation-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudformation\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudformation/aws-cpp-sdk-cloudformation-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudformation\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudfront/aws-cpp-sdk-cloudfront-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudfront\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudfront/aws-cpp-sdk-cloudfront-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudfront\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudhsm/aws-cpp-sdk-cloudhsm-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudhsm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudhsm/aws-cpp-sdk-cloudhsm-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudhsm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudhsmv2/aws-cpp-sdk-cloudhsmv2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudhsmv2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudhsmv2/aws-cpp-sdk-cloudhsmv2-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudhsmv2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudsearch/aws-cpp-sdk-cloudsearch-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudsearch\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudsearch/aws-cpp-sdk-cloudsearch-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudsearch\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudsearchdomain/aws-cpp-sdk-cloudsearchdomain-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudsearchdomain\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudsearchdomain/aws-cpp-sdk-cloudsearchdomain-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudsearchdomain\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudtrail/aws-cpp-sdk-cloudtrail-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudtrail\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cloudtrail/aws-cpp-sdk-cloudtrail-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cloudtrail\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codebuild/aws-cpp-sdk-codebuild-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codebuild\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codebuild/aws-cpp-sdk-codebuild-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codebuild\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codecommit/aws-cpp-sdk-codecommit-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codecommit\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codecommit/aws-cpp-sdk-codecommit-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codecommit\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codedeploy/aws-cpp-sdk-codedeploy-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codedeploy\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codedeploy/aws-cpp-sdk-codedeploy-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codedeploy\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codepipeline/aws-cpp-sdk-codepipeline-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codepipeline\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codepipeline/aws-cpp-sdk-codepipeline-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codepipeline\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codestar/aws-cpp-sdk-codestar-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codestar\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-codestar/aws-cpp-sdk-codestar-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-codestar\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cognito-identity/aws-cpp-sdk-cognito-identity-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-identity\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cognito-identity/aws-cpp-sdk-cognito-identity-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-identity\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cognito-idp/aws-cpp-sdk-cognito-idp-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-idp\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cognito-idp/aws-cpp-sdk-cognito-idp-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-idp\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cognito-sync/aws-cpp-sdk-cognito-sync-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-sync\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cognito-sync/aws-cpp-sdk-cognito-sync-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cognito-sync\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-comprehend/aws-cpp-sdk-comprehend-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-comprehend\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-comprehend/aws-cpp-sdk-comprehend-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-comprehend\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-config/aws-cpp-sdk-config-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-config\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-config/aws-cpp-sdk-config-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-config\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-connect/aws-cpp-sdk-connect-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-connect\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-connect/aws-cpp-sdk-connect-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-connect\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cur/aws-cpp-sdk-cur-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cur\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-cur/aws-cpp-sdk-cur-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-cur\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-datapipeline/aws-cpp-sdk-datapipeline-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-datapipeline\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-datapipeline/aws-cpp-sdk-datapipeline-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-datapipeline\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dax/aws-cpp-sdk-dax-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dax\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dax/aws-cpp-sdk-dax-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dax\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-devicefarm/aws-cpp-sdk-devicefarm-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-devicefarm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-devicefarm/aws-cpp-sdk-devicefarm-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-devicefarm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-directconnect/aws-cpp-sdk-directconnect-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-directconnect\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-directconnect/aws-cpp-sdk-directconnect-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-directconnect\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-discovery/aws-cpp-sdk-discovery-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-discovery\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-discovery/aws-cpp-sdk-discovery-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-discovery\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dms/aws-cpp-sdk-dms-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dms/aws-cpp-sdk-dms-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ds/aws-cpp-sdk-ds-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ds\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ds/aws-cpp-sdk-ds-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ds\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dynamodb/aws-cpp-sdk-dynamodb-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dynamodb\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dynamodb/aws-cpp-sdk-dynamodb-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dynamodb\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dynamodbstreams/aws-cpp-sdk-dynamodbstreams-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dynamodbstreams\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-dynamodbstreams/aws-cpp-sdk-dynamodbstreams-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-dynamodbstreams\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ec2/aws-cpp-sdk-ec2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ec2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ec2/aws-cpp-sdk-ec2-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ec2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ecr/aws-cpp-sdk-ecr-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ecr\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ecr/aws-cpp-sdk-ecr-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ecr\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ecs/aws-cpp-sdk-ecs-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ecs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ecs/aws-cpp-sdk-ecs-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ecs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-eks/aws-cpp-sdk-eks-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-eks\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-eks/aws-cpp-sdk-eks-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-eks\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticache/aws-cpp-sdk-elasticache-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticache\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticache/aws-cpp-sdk-elasticache-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticache\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticbeanstalk/aws-cpp-sdk-elasticbeanstalk-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticbeanstalk\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticbeanstalk/aws-cpp-sdk-elasticbeanstalk-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticbeanstalk\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticfilesystem/aws-cpp-sdk-elasticfilesystem-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticfilesystem\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticfilesystem/aws-cpp-sdk-elasticfilesystem-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticfilesystem\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticloadbalancing/aws-cpp-sdk-elasticloadbalancing-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticloadbalancing\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticloadbalancing/aws-cpp-sdk-elasticloadbalancing-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticloadbalancing\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticloadbalancingv2/aws-cpp-sdk-elasticloadbalancingv2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticloadbalancingv2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticloadbalancingv2/aws-cpp-sdk-elasticloadbalancingv2-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticloadbalancingv2\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticmapreduce/aws-cpp-sdk-elasticmapreduce-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticmapreduce\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elasticmapreduce/aws-cpp-sdk-elasticmapreduce-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elasticmapreduce\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elastictranscoder/aws-cpp-sdk-elastictranscoder-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elastictranscoder\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-elastictranscoder/aws-cpp-sdk-elastictranscoder-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-elastictranscoder\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-email/aws-cpp-sdk-email-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-email\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-email/aws-cpp-sdk-email-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-email\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-marketplace-entitlement/aws-cpp-sdk-marketplace-entitlement-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-marketplace-entitlement\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-marketplace-entitlement/aws-cpp-sdk-marketplace-entitlement-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-marketplace-entitlement\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-es/aws-cpp-sdk-es-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-es\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-es/aws-cpp-sdk-es-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-es\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-events/aws-cpp-sdk-events-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-events\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-events/aws-cpp-sdk-events-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-events\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-firehose/aws-cpp-sdk-firehose-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-firehose\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-firehose/aws-cpp-sdk-firehose-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-firehose\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-fms/aws-cpp-sdk-fms-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-fms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-fms/aws-cpp-sdk-fms-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-fms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-gamelift/aws-cpp-sdk-gamelift-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-gamelift\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-gamelift/aws-cpp-sdk-gamelift-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-gamelift\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-glacier/aws-cpp-sdk-glacier-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-glacier\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-glacier/aws-cpp-sdk-glacier-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-glacier\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-glue/aws-cpp-sdk-glue-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-glue\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-glue/aws-cpp-sdk-glue-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-glue\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-greengrass/aws-cpp-sdk-greengrass-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-greengrass\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-greengrass/aws-cpp-sdk-greengrass-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-greengrass\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-guardduty/aws-cpp-sdk-guardduty-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-guardduty\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-guardduty/aws-cpp-sdk-guardduty-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-guardduty\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-health/aws-cpp-sdk-health-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-health\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-health/aws-cpp-sdk-health-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-health\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iam/aws-cpp-sdk-iam-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iam\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iam/aws-cpp-sdk-iam-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iam\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-importexport/aws-cpp-sdk-importexport-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-importexport\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-importexport/aws-cpp-sdk-importexport-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-importexport\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-inspector/aws-cpp-sdk-inspector-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-inspector\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-inspector/aws-cpp-sdk-inspector-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-inspector\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot/aws-cpp-sdk-iot-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot/aws-cpp-sdk-iot-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot-data/aws-cpp-sdk-iot-data-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot-data\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot-data/aws-cpp-sdk-iot-data-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot-data\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot-jobs-data/aws-cpp-sdk-iot-jobs-data-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot-jobs-data\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot-jobs-data/aws-cpp-sdk-iot-jobs-data-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot-jobs-data\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot1click-devices/aws-cpp-sdk-iot1click-devices-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot1click-devices\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot1click-devices/aws-cpp-sdk-iot1click-devices-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot1click-devices\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot1click-projects/aws-cpp-sdk-iot1click-projects-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot1click-projects\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iot1click-projects/aws-cpp-sdk-iot1click-projects-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iot1click-projects\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iotanalytics/aws-cpp-sdk-iotanalytics-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iotanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-iotanalytics/aws-cpp-sdk-iotanalytics-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-iotanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesis/aws-cpp-sdk-kinesis-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesis/aws-cpp-sdk-kinesis-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesis-video-archived-media/aws-cpp-sdk-kinesis-video-archived-media-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis-video-archived-media\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesis-video-archived-media/aws-cpp-sdk-kinesis-video-archived-media-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis-video-archived-media\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesis-video-media/aws-cpp-sdk-kinesis-video-media-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis-video-media\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesis-video-media/aws-cpp-sdk-kinesis-video-media-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesis-video-media\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesisanalytics/aws-cpp-sdk-kinesisanalytics-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesisanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesisanalytics/aws-cpp-sdk-kinesisanalytics-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesisanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesisvideo/aws-cpp-sdk-kinesisvideo-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesisvideo\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kinesisvideo/aws-cpp-sdk-kinesisvideo-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kinesisvideo\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kms/aws-cpp-sdk-kms-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-kms/aws-cpp-sdk-kms-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-kms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lambda/aws-cpp-sdk-lambda-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lambda\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lambda/aws-cpp-sdk-lambda-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lambda\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lex-models/aws-cpp-sdk-lex-models-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lex-models\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lex-models/aws-cpp-sdk-lex-models-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lex-models\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lightsail/aws-cpp-sdk-lightsail-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lightsail\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lightsail/aws-cpp-sdk-lightsail-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lightsail\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-logs/aws-cpp-sdk-logs-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-logs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-logs/aws-cpp-sdk-logs-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-logs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-machinelearning/aws-cpp-sdk-machinelearning-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-machinelearning\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-machinelearning/aws-cpp-sdk-machinelearning-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-machinelearning\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-macie/aws-cpp-sdk-macie-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-macie\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-macie/aws-cpp-sdk-macie-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-macie\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-marketplacecommerceanalytics/aws-cpp-sdk-marketplacecommerceanalytics-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-marketplacecommerceanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-marketplacecommerceanalytics/aws-cpp-sdk-marketplacecommerceanalytics-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-marketplacecommerceanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediaconvert/aws-cpp-sdk-mediaconvert-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediaconvert\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediaconvert/aws-cpp-sdk-mediaconvert-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediaconvert\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-medialive/aws-cpp-sdk-medialive-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-medialive\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-medialive/aws-cpp-sdk-medialive-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-medialive\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediapackage/aws-cpp-sdk-mediapackage-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediapackage\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediapackage/aws-cpp-sdk-mediapackage-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediapackage\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediastore/aws-cpp-sdk-mediastore-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediastore\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediastore/aws-cpp-sdk-mediastore-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediastore\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediastore-data/aws-cpp-sdk-mediastore-data-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediastore-data\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediastore-data/aws-cpp-sdk-mediastore-data-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediastore-data\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediatailor/aws-cpp-sdk-mediatailor-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediatailor\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mediatailor/aws-cpp-sdk-mediatailor-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mediatailor\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-meteringmarketplace/aws-cpp-sdk-meteringmarketplace-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-meteringmarketplace\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-meteringmarketplace/aws-cpp-sdk-meteringmarketplace-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-meteringmarketplace\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mobile/aws-cpp-sdk-mobile-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mobile\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mobile/aws-cpp-sdk-mobile-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mobile\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mobileanalytics/aws-cpp-sdk-mobileanalytics-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mobileanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mobileanalytics/aws-cpp-sdk-mobileanalytics-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mobileanalytics\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-monitoring/aws-cpp-sdk-monitoring-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-monitoring\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-monitoring/aws-cpp-sdk-monitoring-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-monitoring\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mq/aws-cpp-sdk-mq-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mq\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mq/aws-cpp-sdk-mq-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mq\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mturk-requester/aws-cpp-sdk-mturk-requester-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mturk-requester\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-mturk-requester/aws-cpp-sdk-mturk-requester-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-mturk-requester\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-neptune/aws-cpp-sdk-neptune-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-neptune\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-neptune/aws-cpp-sdk-neptune-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-neptune\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-opsworks/aws-cpp-sdk-opsworks-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-opsworks\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-opsworks/aws-cpp-sdk-opsworks-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-opsworks\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-opsworkscm/aws-cpp-sdk-opsworkscm-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-opsworkscm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-opsworkscm/aws-cpp-sdk-opsworkscm-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-opsworkscm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-organizations/aws-cpp-sdk-organizations-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-organizations\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-organizations/aws-cpp-sdk-organizations-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-organizations\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-pi/aws-cpp-sdk-pi-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pi\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-pi/aws-cpp-sdk-pi-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pi\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-pinpoint/aws-cpp-sdk-pinpoint-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pinpoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-pinpoint/aws-cpp-sdk-pinpoint-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pinpoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-polly/aws-cpp-sdk-polly-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-polly\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-polly/aws-cpp-sdk-polly-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-polly\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-pricing/aws-cpp-sdk-pricing-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pricing\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-pricing/aws-cpp-sdk-pricing-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-pricing\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-rds/aws-cpp-sdk-rds-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-rds\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-rds/aws-cpp-sdk-rds-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-rds\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-redshift/aws-cpp-sdk-redshift-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-redshift\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-redshift/aws-cpp-sdk-redshift-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-redshift\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-rekognition/aws-cpp-sdk-rekognition-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-rekognition\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-rekognition/aws-cpp-sdk-rekognition-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-rekognition\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-resource-groups/aws-cpp-sdk-resource-groups-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-resource-groups\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-resource-groups/aws-cpp-sdk-resource-groups-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-resource-groups\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-resourcegroupstaggingapi/aws-cpp-sdk-resourcegroupstaggingapi-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-resourcegroupstaggingapi\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-resourcegroupstaggingapi/aws-cpp-sdk-resourcegroupstaggingapi-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-resourcegroupstaggingapi\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-route53/aws-cpp-sdk-route53-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-route53\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-route53/aws-cpp-sdk-route53-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-route53\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-route53domains/aws-cpp-sdk-route53domains-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-route53domains\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-route53domains/aws-cpp-sdk-route53domains-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-route53domains\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lex/aws-cpp-sdk-lex-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lex\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-lex/aws-cpp-sdk-lex-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-lex\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sagemaker-runtime/aws-cpp-sdk-sagemaker-runtime-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sagemaker-runtime\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sagemaker-runtime/aws-cpp-sdk-sagemaker-runtime-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sagemaker-runtime\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-s3/aws-cpp-sdk-s3-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-s3\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-s3/aws-cpp-sdk-s3-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-s3\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sagemaker/aws-cpp-sdk-sagemaker-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sagemaker\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sagemaker/aws-cpp-sdk-sagemaker-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sagemaker\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sdb/aws-cpp-sdk-sdb-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sdb\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sdb/aws-cpp-sdk-sdb-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sdb\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-secretsmanager/aws-cpp-sdk-secretsmanager-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-secretsmanager\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-secretsmanager/aws-cpp-sdk-secretsmanager-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-secretsmanager\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-serverlessrepo/aws-cpp-sdk-serverlessrepo-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-serverlessrepo\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-serverlessrepo/aws-cpp-sdk-serverlessrepo-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-serverlessrepo\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-servicecatalog/aws-cpp-sdk-servicecatalog-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-servicecatalog\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-servicecatalog/aws-cpp-sdk-servicecatalog-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-servicecatalog\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-servicediscovery/aws-cpp-sdk-servicediscovery-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-servicediscovery\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-servicediscovery/aws-cpp-sdk-servicediscovery-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-servicediscovery\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-shield/aws-cpp-sdk-shield-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-shield\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-shield/aws-cpp-sdk-shield-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-shield\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sms/aws-cpp-sdk-sms-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sms/aws-cpp-sdk-sms-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sms\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-snowball/aws-cpp-sdk-snowball-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-snowball\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-snowball/aws-cpp-sdk-snowball-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-snowball\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sns/aws-cpp-sdk-sns-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sns\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sns/aws-cpp-sdk-sns-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sns\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sqs/aws-cpp-sdk-sqs-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sqs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sqs/aws-cpp-sdk-sqs-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sqs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ssm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-ssm\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-states/aws-cpp-sdk-states-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-states\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-states/aws-cpp-sdk-states-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-states\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-storagegateway/aws-cpp-sdk-storagegateway-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-storagegateway\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-storagegateway/aws-cpp-sdk-storagegateway-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-storagegateway\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sts/aws-cpp-sdk-sts-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sts\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-sts/aws-cpp-sdk-sts-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-sts\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-support/aws-cpp-sdk-support-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-support\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-support/aws-cpp-sdk-support-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-support\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-swf/aws-cpp-sdk-swf-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-swf\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-swf/aws-cpp-sdk-swf-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-swf\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-transcribe/aws-cpp-sdk-transcribe-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-transcribe\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-transcribe/aws-cpp-sdk-transcribe-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-transcribe\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-translate/aws-cpp-sdk-translate-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-translate\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-translate/aws-cpp-sdk-translate-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-translate\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-waf/aws-cpp-sdk-waf-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-waf\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-waf/aws-cpp-sdk-waf-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-waf\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-waf-regional/aws-cpp-sdk-waf-regional-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-waf-regional\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-waf-regional/aws-cpp-sdk-waf-regional-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-waf-regional\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-workdocs/aws-cpp-sdk-workdocs-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workdocs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-workdocs/aws-cpp-sdk-workdocs-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workdocs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-workmail/aws-cpp-sdk-workmail-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workmail\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-workmail/aws-cpp-sdk-workmail-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workmail\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-workspaces/aws-cpp-sdk-workspaces-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workspaces\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-workspaces/aws-cpp-sdk-workspaces-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-workspaces\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-xray/aws-cpp-sdk-xray-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-xray\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-xray/aws-cpp-sdk-xray-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-xray\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-access-management/aws-cpp-sdk-access-management-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-access-management\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-access-management/aws-cpp-sdk-access-management-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-access-management\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-identity-management/aws-cpp-sdk-identity-management-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-identity-management\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-identity-management/aws-cpp-sdk-identity-management-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-identity-management\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-queues/aws-cpp-sdk-queues-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-queues\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-queues/aws-cpp-sdk-queues-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-queues\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-transfer/aws-cpp-sdk-transfer-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-transfer\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-transfer/aws-cpp-sdk-transfer-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-transfer\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-s3-encryption/aws-cpp-sdk-s3-encryption-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-s3-encryption\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-s3-encryption/aws-cpp-sdk-s3-encryption-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-s3-encryption\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-text-to-speech/aws-cpp-sdk-text-to-speech-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-text-to-speech\"/>
+		</Unit>
+		<Unit filename="C:/Users/Son Do/CLionProjects/PoSBlockchain/../../../../aws-sdk/aws-cpp-sdk-text-to-speech/aws-cpp-sdk-text-to-speech-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\aws-sdk\aws-cpp-sdk-text-to-speech\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
