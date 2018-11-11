@@ -212,30 +212,37 @@ std::mutex mutex;
             return;
         }
 
-        // Need to implement algorithm to determine winner. Using simple randomizer for now.
-        // Every validator has a number which all has same chance of getting picked
-        int randNum = rand()%(validatorsIn.size()) + 1;
+        // Implemented alias method algorithm to determine winner given weight distribution.
+        // Using standard randomizer.
+        // Every validator has a X amount of tokens that determines their weight
+
+        std::vector<Aws::String> probArray;
         Aws::String winnerIP;
         int probFactor;
+        int sum;
         for (std::map<Aws::String, size_t>::iterator iter = validatorsIn.begin(); iter != validatorsIn.end(); ++iter) {
             probFactor = iter -> second;
-            if (randNum == probFactor) {
-                winnerIP = iter->first;
+            sum += probFactor;
+            for (int i; i < probFactor; i++) {
+                probArray.push_back(iter->first);
             }
         }
+        int randNum = rand()%(sum);
+        winnerIP = probArray[randNum];
+
         CBlock pubBlock;
         for (size_t i = 0; i < candBlocks.size(); i++) {
             if(winnerIP.compare(candBlocks[i].blockValidator) == 0) {
                 pubBlock = candBlocks[i];
             }
         }
-        // Only one block (place holder)
+        // If only one block
         if (candBlocks.size() == 1) {
             pubBlock = candBlocks[0];
             winnerIP = candBlocks[0].blockValidator;
         }
 
-        // Need to have wallet and to give coins to winner... Can make a map that stores balance easily...
+        // Publishing winner to server and pushing new block into blockchain
         std::cout << "Winner: " << winnerIP << std::endl;
         blocks.push_back(pubBlock);
 
